@@ -1,6 +1,43 @@
 // CHALLENGE: uncomment the code below and see the car stats rendered
 import React from "react";
 import ReactDOM from "react-dom";
+import cars from "./practice";
+//import animals, { useAnimals } from "./data";
+
+// const [cat, dog] = animals;
+// const [animal, makeSound] = useAnimals(cat);
+
+// console.log(animal);
+// makeSound();
+
+// const { name: catName, sound: catSound } = cat;
+
+// const { name = "fluffy", sound = "purr" } = cat;
+
+// const {
+//   name,
+//   sound,
+//   feedingRequirements: { food, water }
+// } = cat;
+
+// console.log(food);
+// console.log(cars);
+
+const [honda, tesla] = cars;
+
+const {
+  speedStats: { topSpeed: hondaTopSpeed }
+} = honda;
+const {
+  speedStats: { topSpeed: teslaTopSpeed }
+} = tesla;
+
+const {
+  coloursByPopularity: [hondaTopColour]
+} = honda;
+const {
+  coloursByPopularity: [teslaTopColour]
+} = tesla;
 
 ReactDOM.render(
   <table>
